@@ -62,11 +62,19 @@ return require("packer").startup(function(use)
 		}
 	}
 
+	-- Devicons
+	use "nvim-tree/nvim-web-devicons"
+
 	-- Transparent background
 	use "xiyaowong/transparent.nvim"
 
 	-- Colorschemes
 	use "folke/tokyonight.nvim"
+	use "nyoom-engineering/oxocarbon.nvim"
+	use {
+		'daltonmenezes/aura-theme',
+		rtp = 'packages/neovim',
+	}
 
 	if packer_bootstrap then
 		require("packer").sync()
