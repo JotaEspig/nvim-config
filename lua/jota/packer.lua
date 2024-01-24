@@ -69,9 +69,6 @@ return require("packer").startup(function(use)
 	use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
 	use 'romgrk/barbar.nvim'
 
-	-- Transparent background
-	use "xiyaowong/transparent.nvim"
-
 	-- Colorschemes
 	use "folke/tokyonight.nvim"
 	use "nyoom-engineering/oxocarbon.nvim"
@@ -79,6 +76,9 @@ return require("packer").startup(function(use)
 		'daltonmenezes/aura-theme',
 		rtp = 'packages/neovim',
 	}
+
+	-- Transparent background (it's causing some error)
+	-- use "xiyaowong/transparent.nvim"
 
 	if packer_bootstrap then
 		require("packer").sync()
