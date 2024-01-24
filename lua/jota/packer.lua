@@ -65,6 +65,10 @@ return require("packer").startup(function(use)
 	-- Devicons
 	use "nvim-tree/nvim-web-devicons"
 
+	-- Tabline
+	use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+	use 'romgrk/barbar.nvim'
+
 	-- Transparent background
 	use "xiyaowong/transparent.nvim"
 
