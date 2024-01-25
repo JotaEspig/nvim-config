@@ -23,3 +23,8 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 
 -- Save
 vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
+
+-- Opens vertical Terminal
+vim.keymap.set("n", "<A-v>", "<cmd>vs<CR><C-w>l<cmd>term<CR>i")
+-- Opens horizontal Terminal
+vim.keymap.set("n", "<A-t>", "<cmd>split<CR><C-w>j<cmd>term<CR>i")
