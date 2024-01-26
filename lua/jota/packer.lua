@@ -2,11 +2,11 @@ local vim = vim
 
 local ensure_packer = function()
 	local fn = vim.fn
-	local install_path = fn.stdpath("data").."/site/pack/packer/start/packer.nvim"
+	local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 	print(install_path)
 	if fn.empty(fn.glob(install_path)) > 0 then
 		print("hello")
-		fn.system({"git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path})
+		fn.system({ "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path })
 		vim.cmd [[packadd packer.nvim]]
 		return true
 	end
@@ -23,7 +23,7 @@ return require("packer").startup(function(use)
 	use {
 		"nvim-telescope/telescope.nvim", tag = "0.1.5",
 		-- or                            , branch = "0.1.x",
-		requires = { {"nvim-lua/plenary.nvim"} }
+		requires = { { "nvim-lua/plenary.nvim" } }
 	}
 
 	-- Treesitter
@@ -50,15 +50,15 @@ return require("packer").startup(function(use)
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",
 		requires = {
-			{"williamboman/mason.nvim"},
-			{"williamboman/mason-lspconfig.nvim"},
+			{ "williamboman/mason.nvim" },
+			{ "williamboman/mason-lspconfig.nvim" },
 
 			-- LSP Support
-			{"neovim/nvim-lspconfig"},
+			{ "neovim/nvim-lspconfig" },
 			-- Autocompletion
-			{"hrsh7th/nvim-cmp"},
-			{"hrsh7th/cmp-nvim-lsp"},
-			{"L3MON4D3/LuaSnip"},
+			{ "hrsh7th/nvim-cmp" },
+			{ "hrsh7th/cmp-nvim-lsp" },
+			{ "L3MON4D3/LuaSnip" },
 		}
 	}
 
@@ -89,5 +89,4 @@ return require("packer").startup(function(use)
 	if packer_bootstrap then
 		require("packer").sync()
 	end
-
 end)
