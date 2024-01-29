@@ -62,6 +62,8 @@ return require("packer").startup(function(use)
 		}
 	}
 
+	use "lervag/vimtex"
+
 	-- Devicons
 	use "nvim-tree/nvim-web-devicons"
 
