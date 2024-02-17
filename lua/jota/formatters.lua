@@ -2,7 +2,7 @@ local vim = vim
 
 vim.api.nvim_exec([[
 function FormatBuffer()
-    if &modified && !empty(findfile('.clang-format', expand('%:p:h') . ';'))
+    if &modified && executable("clang-format") && !empty(findfile('.clang-format', expand('%:p:h') . ';'))
         let cursor_pos = getpos('.')
         :%!clang-format
         call setpos('.', cursor_pos)
