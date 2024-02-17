@@ -62,7 +62,16 @@ return require("packer").startup(function(use)
 		}
 	}
 
+        -- Vimtex
 	use "lervag/vimtex"
+
+        -- 2048
+        use {
+            "NStefan002/2048.nvim",
+            config = function()
+                require("2048").setup()
+            end,
+        }
 
 	-- Devicons
 	use "nvim-tree/nvim-web-devicons"
