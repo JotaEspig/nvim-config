@@ -45,6 +45,9 @@ return require("packer").startup(function(use)
 		config = function() require("nvim-autopairs").setup {} end
 	}
 
+        -- autosurround
+        use "dapt4/vim-autoSurround"
+
 	-- LSP
 	use {
 		"VonHeikemen/lsp-zero.nvim",
