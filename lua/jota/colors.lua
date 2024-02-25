@@ -10,10 +10,10 @@ function OverrideBG()
 end
 
 function ApplyColors(color)
-	color = color or "tokyonight"
-	vim.cmd.colorscheme(color)
+    color = color or "tokyonight"
+    vim.cmd.colorscheme(color)
 
-	OverrideBG()
+    OverrideBG()
 end
 
 ApplyColors()

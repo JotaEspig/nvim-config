@@ -8,7 +8,8 @@ function FormatBuffer()
         call setpos('.', cursor_pos)
     endif
 endfunction
-]], false)
+]],
+false)
 
 vim.cmd("autocmd BufWritePre *.h,*.hpp,*.c,*.cpp,*.vert,*.frag,*.glsl :call FormatBuffer()")
 vim.cmd("autocmd BufWritePost *.go silent !gofmt -s -w .")

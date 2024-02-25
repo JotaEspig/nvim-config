@@ -76,6 +76,12 @@ return require("packer").startup(function(use)
         end,
     }
 
+    -- BlackJack
+    use {
+        'alanfortlink/blackjack.nvim',
+        requires = {'nvim-lua/plenary.nvim'},
+    }
+
     -- Devicons
     use "nvim-tree/nvim-web-devicons"
 
