@@ -82,6 +82,9 @@ return require("packer").startup(function(use)
         requires = {'nvim-lua/plenary.nvim'},
     }
 
+    -- Cellular Automation
+    use 'eandrju/cellular-automaton.nvim'
+
     -- Devicons
     use "nvim-tree/nvim-web-devicons"
 
