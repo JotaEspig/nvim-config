@@ -68,6 +68,12 @@ return require("packer").startup(function(use)
     -- Vimtex
     use "lervag/vimtex"
 
+    -- Markdown preview
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
     -- 2048
     use {
         "NStefan002/2048.nvim",
