@@ -6,8 +6,8 @@ local opts = { noremap = true, silent = true, }
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', opts)
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferNext<CR>', opts)
 -- Re-order to previous/next
-vim.keymap.set('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
-vim.keymap.set('n', '<A->>', '<Cmd>BufferMoveNext<CR>', opts)
+vim.keymap.set('n', '<C-,>', '<Cmd>BufferMovePrevious<CR>', opts)
+vim.keymap.set('n', '<C-.>', '<Cmd>BufferMoveNext<CR>', opts)
 -- Pin/unpin buffer
 vim.keymap.set('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
