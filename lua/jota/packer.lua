@@ -48,6 +48,9 @@ return require("packer").startup(function(use)
     -- AutoSurround
     use "dapt4/vim-autoSurround"
 
+    -- Codeium
+    use 'Exafunction/codeium.vim'
+
     -- LSP
     use {
         "VonHeikemen/lsp-zero.nvim",
