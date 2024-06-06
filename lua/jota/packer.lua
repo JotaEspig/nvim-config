@@ -50,6 +50,8 @@ return require("packer").startup(function(use)
 
     -- Codeium
     use 'Exafunction/codeium.vim'
+    -- Github Copilot
+    use 'github/copilot.vim'
 
     -- LSP
     use {
