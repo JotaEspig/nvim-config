@@ -13,6 +13,8 @@ lsp.on_attach(function(_, buffnr)
     vim.keymap.set("n", "<leader>la", function() vim.lsp.buf.code_action() end, opts)
     vim.keymap.set("n", "<leader>rf", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
+    -- F2 to rename, like most IDEs and Linux GUIs
+    vim.keymap.set("n", "<F2>", function() vim.lsp.buf.rename() end, opts)
 end)
 
 lsp.setup()
