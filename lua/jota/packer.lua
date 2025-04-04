@@ -19,6 +19,14 @@ return require("packer").startup(function(use)
     -- Packer can manage itself
     use "wbthomason/packer.nvim"
 
+    -- colorizer
+    use {
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+            require("colorizer").setup()
+        end
+    }
+
     -- Telescope
     use {
         "nvim-telescope/telescope.nvim", tag = "0.1.5",
