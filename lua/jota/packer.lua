@@ -120,6 +120,12 @@ return require("packer").startup(function(use)
 
     -- Colorschemes
     use "folke/tokyonight.nvim"
+    use "shaunsingh/nord.nvim"
+    use "olimorris/onedarkpro.nvim"
+    use "Mofiqul/vscode.nvim"
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use "rebelot/kanagawa.nvim"
+    use "scottmckendry/cyberdream.nvim"
     use "nyoom-engineering/oxocarbon.nvim"
     use {
         'daltonmenezes/aura-theme',
