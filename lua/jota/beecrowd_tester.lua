@@ -17,9 +17,9 @@ vim.api.nvim_create_user_command("BeecrowdTest", function(opts)
   local expected_file = "tests/" .. base .. ".exout"
 
   -- Open files in splits
-  vim.cmd("tabnew " .. solution_file)
-  vim.cmd("tabnew " .. input_file)
-  vim.cmd("tabnew " .. expected_file)
+  vim.cmd("edit " .. solution_file)
+  vim.cmd("edit " .. input_file)
+  vim.cmd("edit " .. expected_file)
 end, {
   nargs = 1,
   complete = "file",
