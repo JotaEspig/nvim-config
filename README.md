@@ -1,3 +1,4 @@
+# MOVED TO [https://github.com/JotaEspig/dotfiles](https://github.com/JotaEspig/dotfiles)
 # nvim-config
 My neovim config written from scratch
 
